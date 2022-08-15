@@ -1,0 +1,26 @@
+<mvc:View controllerName="logaligroup.empleados.controller.View" xmlns:mvc="sap.ui.core.mvc"  xmlns:core="sap.ui.core" displayBlock="true" xmlns="sap.m">
+    <Page title="{i18n>title}">
+        <content>
+				<Panel headerText="{i18n>empleados}" expandable="true" expanded="true">
+                        
+                     
+							<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop"  headerImage="sap-icon://add-employee"  press="CreaEmpleado">
+								<TileContent footer="{i18n>creaEmpleados}">
+								</TileContent>
+							</GenericTile>
+
+							<GenericTile  class="sapUiTinyMarginBegin sapUiTinyMarginTop" headerImage="sap-icon://employee-lookup" press="VisualizaEmpleado">
+								<TileContent footer="{i18n>visualEmpleados}">
+								</TileContent>
+							</GenericTile>
+						</Panel>
+
+					<Panel headerText="{i18n>pedidos}"  expandable="true" expanded="true">
+							<GenericTile id="idFirmarPedido" class="sapUiTinyMarginBegin sapUiTinyMarginTop"  headerImage="sap-icon://signature"  press='llamarUrl' > 
+							<TileContent footer="{i18n>firmaPedidos}">	</TileContent>
+							</GenericTile>
+		 		</Panel>
+		</content>
+	</Page>
+
+</mvc:View>
